@@ -51,7 +51,7 @@ CHACHO — це сучасний веб-сайт ресторану, створ�
 
 1. **Завантажте файли проекту:**
    ```bash
-   git clone [[посилання на репозиторій](https://github.com/D1ff1337/IS-44_webapp_Kirieiev_Maksim_Chacho_restourant_Kirieiev.git)]
+   git clone [(https://github.com/D1ff1337/IS-44_webapp_Kirieiev_Maksim_Chacho_restourant_Kirieiev.git)]
    
 Відкрийте проект:
 2. Відкрийте папку проекту у файловому менеджері
