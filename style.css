@@ -1,199 +1,686 @@
 *{
-     margin: 0;
-     padding: 0;
-     font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
 }
 body{
-     background-color: #F3F4F6;
+    background-color: #F3F4F6;
 }
 .bg-dark-transparent{
-     background-color: #f0e5cfc9
-     ;
+    background-color: rgba(240, 229, 207, 0.5);
 }
 .fs-30{
-     font-size: 30px;
+    font-size: 30px;
 }
 .fs-50{
-     font-size: 50px;
+    font-size: 50px;
 }
 html{
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* header */
+header {
+    position: relative;
+}
 
 
 
+
+
+.navbar {
+    min-height: 60px !important; /* Зменшена висота */
+    padding: 8px 0 !important;   /* Менші вертикальні відступи */
+}
+
+.navbar-brand img {
+    height: 40px !important;     /* Зменшений логотип */
+}
+
+.navbar-nav .nav-link {
+    padding: 8px 15px !important; /* Менші відступи в меню */
+    font-size: 14px;
+}
 
 /* footer */
 footer{
-     background-color: #f3eee5
-
+    background-color: #f3eee5;
 }
 .bg-footer-dark{
-     background-color: #000000;
+    background-color: #000000;
 }
 .footer-link-item{
-     color: #000000;
-     font-weight: bold;
-     text-decoration-line: none;
+    color: #000000;
+    font-weight: bold;
+    text-decoration-line: none;
 }
 .footer-link-item:hover{
-     color: crimson;
-     font-weight: normal;
+    color: crimson;
+    font-weight: normal;
 }
 .icon-link{
-     color: rgb(5, 5, 5);
-     font-size: 40px;
-     font-weight: bold;
+    color: rgb(5, 5, 5);
+    font-size: 40px;
+    font-weight: bold;
 }
 .icon-link:hover{
-     color: crimson;
-     font-weight: normal;
+    color: crimson;
+    font-weight: normal;
 }
 .gotoupbtn{
-	position: fixed;
-	width: 50px;
-	height: 50px;
-	background: rgb(19, 95, 48);
-	bottom: 40px;
-	right: 50px;
-	border-radius: 2px;
-	text-align: center;
-	line-height: 50px;
-	color: #e3e3e3;
-	font-size: 30px;
-	text-decoration: none;
-	cursor: pointer;
-	transition: 0.5s;
-	z-index: 1;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: rgb(19, 95, 48);
+    bottom: 40px;
+    right: 50px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 50px;
+    color: #e3e3e3;
+    font-size: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1000;
 }
 .gotoupbtn:hover{
-	font-size: 25px;
-	background: rgb(15, 73, 37);
-	color: rgb(78, 30, 30);
-	width: 48px;
-	height: 48px;
-	border-radius: 50%;
+    font-size: 25px;
+    background: rgb(15, 73, 37);
+    color: rgb(78, 30, 30);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
 }
 .custom-btn{
-     color: rgb(5, 5, 5);
-     font-weight: bold;
+    color: rgb(5, 5, 5);
+    font-weight: bold;
 }
 .custom-btn:hover{
-     background-color: crimson;
-     font-weight: normal;
-     color: white;
+    background-color: crimson;
+    font-weight: normal;
+    color: white;
 }
+
 /* Home page */
 .circle-img{
-     border-radius: 50%;
+    border-radius: 50%;
 }
 .icon-style{
-     color: rgb(5, 5, 5);
-     font-size: 30px;
+    color: rgb(5, 5, 5);
+    font-size: 30px;
 }
 .shadow-bg{
-     background: rgb(228,228,228);
-     background: radial-gradient(circle, rgba(228,228,228,1) 17%, rgba(208,205,253,1) 18%, rgba(220,213,255,1) 30%, rgba(228,227,229,1) 37%, rgba(206,203,255,1) 55%);
+    background: rgb(228,228,228);
+    background: radial-gradient(circle, rgba(228,228,228,1) 17%, rgba(208,205,253,1) 18%, rgba(220,213,255,1) 30%, rgba(228,227,229,1) 37%, rgba(206,203,255,1) 55%);
 }
 .height-5{
-     height: 250px;
+    height: 250px;
 }
 
 /* menu */
-/* card */
 .card-menu{
-     background-color: #fff9e9;
+    background-color: #fff9e9;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.card-menu:hover {
+    transform: translateY(-5px);
 }
 .breadcrumb{
-     background-color: #f3eee5;
+    background-color: #f3eee5;
 }
 .breadcrumb-item{
-     color: #000000;
-     
+    color: #000000;
 }
 
 /* about */
-
 #bg{
-	background-image: url('img/aboutus/png4.jpg');
-	background-attachment: fixed;
-	background-position: center;
+    background-image: url('img/aboutus/png4.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 .about{
-	width: 100;
-	height: 100;
-	justify-content: center;
-	align-items: center;
-	margin-top: 150px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    padding: 20px 0;
+}
+.about .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
 .about .content img{
-	width: 600px;
-	max-width: 100%;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0, .5);
+    width: 600px;
+    max-width: 100%;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0, 0.5);
+    transition: transform 0.3s ease;
 }
-
 .about .content img:hover{
-	width: 630px;
-	max-width: 130%;
+    transform: scale(1.05);
 }
 .text{
-	width: 550px;
-	max-width: 100%;
+    width: 550px;
+    max-width: 100%;
+    text-align: center;
 }
-
 .content{
-	width: 1280px;
-	max-width: 95%;
-	align-items: center;
-	justify-content: space-around;
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
 }
 .text h10{
-	color: #F8D210;
-	font-size: 50px;
-	margin-bottom: 40px;
-	margin-top: 40px;
+    color: #F8D210;
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: block;
 }
 .text p{
-	font-size: 18px;
-	margin-bottom: 70px;
-
+    font-size: 18px;
+    margin-bottom: 70px;
+    line-height: 1.6;
 }
-
 #aboutlink{
-	color: #4C5270;
-	text-decoration: underline;
-	font-size: 20px;
+    color: #4C5270;
+    text-decoration: underline;
+    font-size: 20px;
 }
-
 #aboutlink:hover{
-	color: #F8D210;
-	font-size: 20px;
+    color: #F8D210;
+    font-size: 20px;
 }
-
 button{
-	background-color: #F8D210;
-	color: #4C5270;
-	border: 2px solid transparent;
-	padding: 10px 30px;
-	border-radius: 30px;
-	text-decoration: none;
-	font-size: 17px;
-	margin-bottom: 70px;
+    background-color: #F8D210;
+    color: #4C5270;
+    border: 2px solid transparent;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 17px;
+    
+    transition: all 0.3s ease;
 }
-
 button:hover{
-	text-decoration: underline;
-	padding: 6px 16px;
+    text-decoration: underline;
+    transform: scale(1.05);
 }
 
 /* contact us */
-
 .text-color{
     color: rgb(24, 109, 179);
     font-weight: bold;
 }
 .bg-bw{
     background-color: rgba(222, 184, 135, 0.774);
+}
+
+/* Navigation */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: crimson !important;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Forms */
+.form-control {
+    border: 2px solid #000 !important;
+}
+.form-control:focus {
+    border-color: crimson !important;
+    box-shadow: 0 0 0 0.2rem rgba(220, 20, 60, 0.25);
+}
+
+/* Адаптація для планшетів */
+@media (max-width: 1024px) {
+    .fs-50 {
+        font-size: 40px;
+    }
+    
+    .fs-30 {
+        font-size: 25px;
+    }
+    
+    .about .content img {
+        width: 500px;
+    }
+    
+    .text {
+        width: 500px;
+    }
+    
+    .text h10 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .height-5 {
+        height: 200px;
+    }
+    
+    .icon-style {
+        font-size: 25px;
+    }
+    
+    .gotoupbtn {
+        width: 45px;
+        height: 45px;
+        bottom: 30px;
+        right: 30px;
+        line-height: 45px;
+        font-size: 25px;
+    }
+    
+    .about {
+        margin-top: 120px;
+    }
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    .fs-50 {
+        font-size: 32px;
+    }
+    
+    .fs-30 {
+        font-size: 20px;
+    }
+    
+    .about {
+        margin-top: 100px;
+    }
+    
+    .about .content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .about .content img {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 0;
+    }
+    
+    .text {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .text h10 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .text p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .height-5 {
+        height: 150px;
+    }
+    
+    .icon-style {
+        font-size: 20px;
+    }
+    
+    .icon-link {
+        font-size: 30px;
+    }
+    
+    .gotoupbtn {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    
+    .gotoupbtn:hover {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+    
+    button {
+        padding: 8px 25px;
+        font-size: 16px;
+       
+    }
+    
+    #aboutlink {
+        font-size: 18px;
+    }
+    
+    .navbar-brand img {
+        height: 40px;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Адаптація для маленьких мобільних пристроїв */
+@media (max-width: 480px) {
+    .fs-50 {
+        font-size: 28px;
+    }
+    
+    .fs-30 {
+        font-size: 18px;
+    }
+    
+    .text h10 {
+        font-size: 28px;
+    }
+    
+    .text p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    .height-5 {
+        height: 120px;
+    }
+    
+    .icon-style {
+        font-size: 18px;
+    }
+    
+    .icon-link {
+        font-size: 25px;
+    }
+    
+    .gotoupbtn {
+        width: 35px;
+        height: 35px;
+        bottom: 15px;
+        right: 15px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+    
+    .gotoupbtn:hover {
+        width: 33px;
+        height: 33px;
+        font-size: 16px;
+    }
+    
+    button {
+        padding: 6px 20px;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    
+    #aboutlink {
+        font-size: 16px;
+    }
+    
+    .card-menu {
+        margin: 10px 0;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    footer iframe {
+        height: 300px !important;
+    }
+}
+
+/* Адаптація для дуже великих екранів */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .about .content {
+        max-width: 1400px;
+    }
+    
+    .text {
+        width: 700px;
+    }
+    
+    .text h10 {
+        font-size: 60px;
+    }
+    
+    .text p {
+        font-size: 20px;
+    }
+}
+
+/* Адаптація для ландшафтної орієнтації на мобільних */
+@media (max-width: 896px) and (orientation: landscape) {
+    .about {
+        margin-top: 80px;
+    }
+    
+    .about .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .about .content img {
+        width: 45%;
+        margin-bottom: 0;
+    }
+    
+    .text {
+        width: 50%;
+        padding: 0 20px;
+    }
+    
+    .height-5 {
+        height: 180px;
+    }
+    
+    header div {
+        height: 400px !important;
+    }
+    
+    .container.flex-column.d-flex.justify-content-center {
+        height: 400px !important;
+    }
+}
+
+/* Адаптація для високих екранів */
+@media (min-height: 1000px) {
+    .about {
+        margin-top: 200px;
+    }
+    
+    .height-5 {
+        height: 300px;
+    }
+}
+
+/* Спеціальні адаптації для iframe в footer */
+@media (max-width: 768px) {
+    footer iframe {
+        width: 100% !important;
+        height: 300px !important;
+    }
+}
+
+/* Адаптація для головного заголовка */
+@media (max-width: 768px) {
+    header div {
+        height: 400px !important;
+    }
+    
+    .container.flex-column.d-flex.justify-content-center {
+        height: 400px !important;
+    }
+    
+    .text-center.py-4 h1 {
+        font-size: 24px;
+    }
+    
+    .text-center.py-4 h3 {
+        font-size: 18px;
+    }
+}
+
+/* Адаптація карток в меню */
+@media (max-width: 768px) {
+    .col-sm-12.col-lg-4.col-md-4 {
+        margin-bottom: 20px;
+    }
+    
+    .card-menu .card-body h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card-menu .card-body p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Адаптація форми резервації */
+@media (max-width: 576px) {
+    .col-md-8.col-sm-12 {
+        padding: 0 10px;
+    }
+    
+    .form-row .col-md-6 {
+        margin-bottom: 15px;
+    }
+}
+
+.navbar-dark.bg-dark-transparent {
+    transition: all 0.3s ease;
+}
+
+/* Мобільне меню */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(80, 74, 66, 0.3);
+        margin-top: 10px;
+        border-radius: 5px;
+        padding: 15px;
+    }
+    
+    .navbar-nav .nav-link {
+        text-align: center;
+        padding: 10px 15px;
+        margin: 5px 0;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 131, 15, 0.2);
+        color: white !important;
+    }
+    
+    .navbar-toggler {
+        border: none;
+        padding: 5px 10px;
+    }
+    
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+/* Планшетна версія */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-nav .nav-link {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .navbar-brand img {
+        height: 45px;
+    }
+}
+
+/* Активний пункт меню */
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar-nav .nav-item.active .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: crimson;
+}
+
+/* Анімація для мобільного меню */
+.navbar-collapse.collapsing {
+    transition: height 0.35s ease;
+}
+
+/* Фікс для кнопки навігації на мобільних */
+.navbar-toggler {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.card-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-menu .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-menu img {
+    height: 200px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .card-menu img {
+        height: 180px;
+    }
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.2) !important;
 }
